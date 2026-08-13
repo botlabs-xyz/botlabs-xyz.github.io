@@ -3,7 +3,7 @@
 [![Website](https://img.shields.io/badge/🌐_Website-afterpartylabs.xyz-blue?style=flat-square)](https://afterpartylabs.xyz)
 [![Documentation](https://img.shields.io/badge/📖_Docs-botlabs--xyz.github.io-purple?style=flat-square)](https://botlabs-xyz.github.io/)
 [![Discord](https://img.shields.io/badge/💬_Discord-Join_Community-7289DA?style=flat-square)](https://discord.gg/BusuZp2G8w)
-[![License](https://img.shields.io/badge/License-Afterparty_Bot_Labs-lightgrey?style=flat-square)](https://github.com/botlabs-xyz/botlabs-Legal-Documentation/blob/main/legal/LICENSE)
+[![License](https://img.shields.io/badge/License-Afterparty_Bot_Labs-lightgrey?style=flat-square)](https://github.com/botlabs-xyz/Afterparty-Legal-Documentation)
 
 Official documentation website for **Afterparty Bot Labs** and our Discord bot network.
 
@@ -45,7 +45,7 @@ This documentation website provides information about the Afterparty Bot Labs ec
 - Privacy and legal information
 - Partner and infrastructure information
 
-Additional documentation will be added as our network continues to expand.
+Additional documentation will continue to be added as the Afterparty Bot Labs network expands.
 
 ---
 
@@ -73,7 +73,7 @@ More projects and services may be added in the future.
 | Website | https://afterpartylabs.xyz |
 | GitHub Organization | https://github.com/botlabs-xyz |
 | Documentation | https://botlabs-xyz.github.io/ |
-| Legal Documentation | https://github.com/botlabs-xyz/botlabs-Legal-Documentation |
+| Legal Documentation | https://github.com/botlabs-xyz/Afterparty-Legal-Documentation |
 | Discord Community | https://discord.gg/BusuZp2G8w |
 | Patreon | https://patreon.com/AfterpartyClub |
 
@@ -83,30 +83,16 @@ More projects and services may be added in the future.
 
 For transparency and user protection, Afterparty Bot Labs maintains official legal documentation.
 
-The legal repository contains:
+The official legal repository contains:
 
-- Privacy Policy
-- Terms of Service
-- Cookie Policy
-- License Information
+- 🔒 Privacy Policy
+- 📜 Terms of Service
+- 🍪 Cookie Policy
+- ⚖️ License Information
 
-Official legal documentation:
+Official Legal Documentation:
 
-https://github.com/botlabs-xyz/botlabs-Legal-Documentation
-
-Direct documents:
-
-- Privacy Policy  
-  https://github.com/botlabs-xyz/botlabs-Legal-Documentation/blob/main/legal/privacy-policy
-
-- Terms of Service  
-  https://github.com/botlabs-xyz/botlabs-Legal-Documentation/blob/main/legal/terms-of-service
-
-- Cookie Policy  
-  https://github.com/botlabs-xyz/botlabs-Legal-Documentation/blob/main/legal/Cookie-Policy
-
-- License  
-  https://github.com/botlabs-xyz/botlabs-Legal-Documentation/blob/main/legal/LICENSE
+https://github.com/botlabs-xyz/Afterparty-Legal-Documentation
 
 ---
 
@@ -129,9 +115,9 @@ Future updates include:
 
 This repository follows the official **Afterparty Bot Labs licensing policy**.
 
-The official license can be found here:
+The official license documentation can be found here:
 
-https://github.com/botlabs-xyz/botlabs-Legal-Documentation/blob/main/legal/LICENSE
+https://github.com/botlabs-xyz/Afterparty-Legal-Documentation
 
 ---
 
