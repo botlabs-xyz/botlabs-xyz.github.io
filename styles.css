@@ -23,7 +23,7 @@
 /* Reset */
 
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
   margin:0;
   padding:0;
 }
@@ -31,6 +31,11 @@
 
 html {
   scroll-behavior:smooth;
+}
+
+
+section {
+  scroll-margin-top:90px;
 }
 
 
@@ -44,7 +49,6 @@ body {
     "Segoe UI",
     sans-serif;
 
-
   background:
     radial-gradient(
       circle at top,
@@ -52,7 +56,6 @@ body {
       transparent 35%
     ),
     var(--background);
-
 
   color:var(--text);
 
@@ -75,20 +78,53 @@ a {
 .navbar {
 
   position:sticky;
+
   top:0;
 
-  z-index:100;
+  z-index:1000;
+
 
   background:
-    rgba(5,9,20,.82);
+    rgba(5,9,20,.72);
+
 
   backdrop-filter:
-    blur(18px);
+    blur(22px);
+
+  -webkit-backdrop-filter:
+    blur(22px);
 
 
   border-bottom:
-    1px solid var(--border);
+    1px solid rgba(39,215,255,.15);
+
 }
+
+
+.navbar::after {
+
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  right:0;
+
+  bottom:-1px;
+
+  height:1px;
+
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(39,215,255,.45),
+      transparent
+    );
+
+}
+
 
 
 .nav-inner {
@@ -98,7 +134,9 @@ a {
 
   margin:auto;
 
+
   min-height:76px;
+
 
   padding:
     0 24px;
@@ -109,6 +147,7 @@ a {
   align-items:center;
 
   justify-content:space-between;
+
 }
 
 
@@ -126,7 +165,11 @@ a {
 
   font-weight:850;
 
+
   letter-spacing:-.03em;
+
+  white-space:nowrap;
+
 }
 
 
@@ -137,7 +180,11 @@ a {
 
   height:44px;
 
+
   object-fit:contain;
+
+
+  flex-shrink:0;
 
 
   border-radius:12px;
@@ -150,6 +197,7 @@ a {
     drop-shadow(
       0 0 12px rgba(39,215,255,.45)
     );
+
 }
 
 
@@ -164,8 +212,8 @@ a {
     drop-shadow(
       0 0 18px rgba(39,215,255,.75)
     );
-}
 
+}
 
 
 
@@ -174,7 +222,9 @@ nav {
   display:flex;
 
   gap:30px;
+
 }
+
 
 
 nav a {
@@ -186,13 +236,16 @@ nav a {
   transition:.2s ease;
 
   font-weight:600;
+
 }
+
 
 
 nav a:hover {
 
   color:
     var(--cyan);
+
 }
 
 
@@ -206,6 +259,7 @@ nav a:hover {
 
   min-height:680px;
 
+
   padding:
     120px 24px;
 
@@ -213,6 +267,7 @@ nav a:hover {
   display:flex;
 
   flex-direction:column;
+
 
   justify-content:center;
 
@@ -224,7 +279,9 @@ nav a:hover {
 
   position:relative;
 
+
   overflow:hidden;
+
 }
 
 
@@ -257,7 +314,6 @@ nav a:hover {
 
 
 .hero-badge {
-
 
   padding:
     10px 20px;
@@ -307,8 +363,8 @@ nav a:hover {
 }
 
 
-.hero h1 span {
 
+.hero h1 span {
 
   display:block;
 
@@ -333,6 +389,7 @@ nav a:hover {
 
   max-width:720px;
 
+
   margin-top:30px;
 
 
@@ -347,7 +404,6 @@ nav a:hover {
 
 
 .hero-buttons {
-
 
   display:flex;
 
@@ -375,9 +431,12 @@ nav a:hover {
   font-weight:750;
 
 
-  transition:.25s ease;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
 
 }
+
 
 
 .button:hover {
@@ -426,7 +485,6 @@ nav a:hover {
 
 .section {
 
-
   max-width:
     var(--max-width);
 
@@ -443,7 +501,6 @@ nav a:hover {
 
 .section-heading {
 
-
   max-width:700px;
 
 
@@ -455,7 +512,6 @@ nav a:hover {
 
 .section-heading span,
 .support-box span {
-
 
   color:
     var(--cyan);
@@ -476,7 +532,6 @@ nav a:hover {
 .section-heading h2,
 .support-box h2 {
 
-
   margin-top:10px;
 
 
@@ -489,7 +544,6 @@ nav a:hover {
 
 .section-heading p,
 .support-box p {
-
 
   margin-top:15px;
 
@@ -508,7 +562,6 @@ nav a:hover {
 
 .card-grid,
 .bot-grid {
-
 
   display:grid;
 
@@ -529,7 +582,6 @@ nav a:hover {
 .card,
 .bot-card {
 
-
   padding:30px;
 
 
@@ -548,8 +600,11 @@ nav a:hover {
   border-radius:20px;
 
 
-  transition:.25s ease;
-
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    background .25s ease,
+    box-shadow .25s ease;
 
 }
 
@@ -557,7 +612,6 @@ nav a:hover {
 
 .card:hover,
 .bot-card:hover {
-
 
   transform:
     translateY(-6px);
@@ -571,12 +625,14 @@ nav a:hover {
     rgba(39,215,255,.45);
 
 
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.35);
+
 }
 
 
 
 .card-icon {
-
 
   font-size:2rem;
 
@@ -590,15 +646,14 @@ nav a:hover {
 .card p,
 .bot-card p {
 
-
   color:
     var(--text-soft);
 
 }
 
 
-.card a {
 
+.card a {
 
   display:inline-block;
 
@@ -630,7 +685,6 @@ nav a:hover {
 
 
 .support-box {
-
 
   text-align:center;
 
@@ -667,7 +721,6 @@ nav a:hover {
 
 footer {
 
-
   border-top:
     1px solid var(--border);
 
@@ -680,7 +733,6 @@ footer {
 
 
 .footer-inner {
-
 
   max-width:
     var(--max-width);
@@ -707,7 +759,6 @@ footer {
 
 .footer-inner p {
 
-
   color:
     var(--text-soft);
 
@@ -716,7 +767,6 @@ footer {
 
 
 .footer-links {
-
 
   display:flex;
 
@@ -732,7 +782,6 @@ footer {
 
 .footer-links a {
 
-
   color:
     var(--text-soft);
 
@@ -742,7 +791,6 @@ footer {
 
 .footer-links a:hover {
 
-
   color:
     var(--cyan);
 
@@ -751,7 +799,6 @@ footer {
 
 
 .copyright {
-
 
   text-align:center;
 
@@ -766,7 +813,6 @@ footer {
 
   color:
     var(--text-soft);
-
 
 }
 
@@ -806,7 +852,6 @@ nav {
 
 .hero-buttons {
 
-
   flex-direction:column;
 
 
@@ -821,7 +866,6 @@ nav {
 
 .footer-inner {
 
-
   flex-direction:column;
 
 }
@@ -829,7 +873,6 @@ nav {
 
 
 .brand-logo {
-
 
   width:36px;
 
